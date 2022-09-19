@@ -13,6 +13,7 @@ module.exports = {
                     'secondary': '#713770',
                     'light': '#B34270',
                     'lighter': '#E95670',
+                    'silk': '#FFD9CE'
                 }
             },
             fontFamily: {
