@@ -6,7 +6,8 @@ import About from "./components/About";
 
 function App() {
     return (
-        <div className="w-full bg-gradient-to-b from-gray-900 to-theme-primary min-h-screen">
+        <div
+            className="w-full bg-gradient-to-b from-theme-primary to-theme-secondary min-h-screen">
             <Nav/>
             <main className="container mx-auto p-4 text-gray-100">
                 <Hero/>
