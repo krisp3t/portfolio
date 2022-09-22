@@ -10,7 +10,7 @@ const skills = [['JavaScript (ES6+)', <SiJavascript/>], ['React', <SiReact/>], [
 
 export default function About() {
     return (
-        <section className="container pb-40 xl:mx-auto px-32" id="about">
+        <section className="container pb-32 xl:mx-auto px-32" id="about">
             <SectionHeading>About Me</SectionHeading>
             <div className="space-y-4">
                 <p>
@@ -34,7 +34,8 @@ export default function About() {
                     nihil quaerat quis saepe sunt suscipit tenetur. Ab cumque delectus deleniti dicta explicabo impedit
                     libero perferendis possimus!
                 </p>
-                <AboutSkills skills={skills}></AboutSkills>
             </div>
+            <h3 className="font-semibold text-xl text-center mt-8 mb-4 text-theme-lighter">I'm experienced in:</h3>
+            <AboutSkills skills={skills}></AboutSkills>
         </section>);
 }

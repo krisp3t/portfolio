@@ -1,0 +1,17 @@
+[
+  {
+    "id": 0,
+    "name": "Pomodoro Timer",
+    "description": "Customizable Pomodoro Timer made with React and Chakra UI to help you get stuff done."
+  },
+  {
+    "id": 1,
+    "name": "Witchcraft Theme",
+    "description": "WordPress theme made for blogs and WooCommerce stores."
+  },
+  {
+    "id": 2,
+    "name": "Tic Tac Toe",
+    "description": "A customizable Tic-Tac-Toe game built upon vanilla JS."
+  }
+]

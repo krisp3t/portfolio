@@ -7,7 +7,7 @@ import {CgChevronDoubleDown} from "react-icons/cg";
 
 export default function Hero() {
     return (
-        <section className="w-full h-screen flex flex-col-reverse md:flex-row pb-60" id="hero">
+        <section className="w-full h-[90vh] flex flex-col-reverse md:flex-row pb-52" id="hero">
             <div className="m-auto flex flex-col text-theme-silk">
                 <h3 className="text-2xl mb-4">Hi, my name is</h3>
                 <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-theme-light to-theme-lighter pb-8 underline underline-offset-8 decoration-2 decoration-theme-light">Kristijan
