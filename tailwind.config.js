@@ -11,14 +11,15 @@ module.exports = {
                 'theme': {
                     'primary': '#432F70',
                     'secondary': '#713770',
-                    'light': '#B34270',
+                    'light': '#8a3459',
                     'lighter': '#E95670',
                     'silk': '#FFD9CE'
                 }
             },
             fontFamily: {
-                'sans': ['Montserrat', ...defaultTheme.fontFamily.sans],
-            },
+                'sans': ['Reem Kufi Fun', ...defaultTheme.fontFamily.sans],
+                'open-sans': ['Open Sans', ...defaultTheme.fontFamily.sans]
+            }
         },
     },
     plugins: [],

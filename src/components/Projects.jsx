@@ -1,8 +1,10 @@
 import React from "react";
+
+import Section from "./Section";
 import SectionHeading from "./SectionHeading";
 
 export default function Projects() {
-    return (<section className="container pb-32 xl:mx-auto px-32" id="projects">
+    return (<Section id="projects">
         <SectionHeading>Projects</SectionHeading>
         <div className="space-y-4">
             <p>
@@ -27,5 +29,5 @@ export default function Projects() {
                 libero perferendis possimus!
             </p>
         </div>
-    </section>);
+    </Section>);
 }

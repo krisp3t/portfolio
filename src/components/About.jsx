@@ -2,6 +2,7 @@ import React from "react";
 import {GrMysql} from "react-icons/gr";
 import {SiJavascript, SiReact, SiPhp, SiCss3, SiWordpress} from "react-icons/si";
 
+import Section from "./Section";
 import SectionHeading from "./SectionHeading";
 import AboutSkills from "./AboutSkills";
 
@@ -10,7 +11,7 @@ const skills = [['JavaScript (ES6+)', <SiJavascript/>], ['React', <SiReact/>], [
 
 export default function About() {
     return (
-        <section className="container pb-32 xl:mx-auto px-32" id="about">
+        <Section id="about">
             <SectionHeading>About Me</SectionHeading>
             <div className="space-y-4">
                 <p>
@@ -35,7 +36,8 @@ export default function About() {
                     libero perferendis possimus!
                 </p>
             </div>
-            <h3 className="font-semibold text-xl text-center mt-8 mb-4 text-theme-lighter">I'm experienced in:</h3>
+            <h3 className="font-semibold text-2xl text-center mt-8 mb-4 text-theme-lighter font-sans">I'm experienced
+                in:</h3>
             <AboutSkills skills={skills}></AboutSkills>
-        </section>);
+        </Section>);
 }
