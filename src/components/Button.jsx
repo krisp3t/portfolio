@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Button(props) {
-    const icon = props.icon ? <span className="mr-1 -ml-2">{props.icon}</span> : null;
+    const icon = props.icon ? <span className="mr-2 -ml-2">{props.icon}</span> : null;
     return (
         <a href={props.link}>
             <button

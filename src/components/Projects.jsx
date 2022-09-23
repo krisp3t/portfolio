@@ -2,32 +2,16 @@ import React from "react";
 
 import Section from "./Section";
 import SectionHeading from "./SectionHeading";
+import ProjectItem from "./ProjectItem";
+import projectList from "../projects/projects.json";
 
 export default function Projects() {
+    console.log(projectList);
+
     return (<Section id="projects">
         <SectionHeading>Projects</SectionHeading>
-        <div className="space-y-4">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dignissimos doloremque explicabo iusto,
-                laudantium maxime non perferendis quasi repellat, sequi sint tempora, totam! Accusamus aut autem
-                commodi
-                consequatur consequuntur cum delectus deserunt doloremque dolores et, eum eveniet expedita facilis
-                hic,
-                itaque, laudantium magnam magni neque perspiciatis placeat qui quos repellat?
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, aut commodi, consectetur culpa
-                dolore fuga iure nesciunt perferendis recusandae repellendus sunt tempora veniam, veritatis
-                voluptatem
-                voluptatum? Delectus deserunt doloribus enim fuga illum incidunt ipsam ipsum iusto nemo nostrum
-                obcaecati officiis possimus praesentium, quam reiciendis rerum sed ullam voluptatum? Perspiciatis,
-                quia.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque blanditiis dolorum eligendi maiores,
-                nihil quaerat quis saepe sunt suscipit tenetur. Ab cumque delectus deleniti dicta explicabo impedit
-                libero perferendis possimus!
-            </p>
-        </div>
+        <ul className="space-y-4 grid grid-cols-3 gap-10">
+            {projectList.map(el => <ProjectItem item={el}/>)}
+        </ul>
     </Section>);
 }

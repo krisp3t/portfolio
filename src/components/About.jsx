@@ -36,7 +36,7 @@ export default function About() {
                     libero perferendis possimus!
                 </p>
             </div>
-            <h3 className="font-semibold text-2xl text-center mt-8 mb-4 text-theme-lighter font-sans">I'm experienced
+            <h3 className="font-semibold text-2xl text-center mt-16 mb-4 text-theme-lighter font-sans">I'm experienced
                 in:</h3>
             <AboutSkills skills={skills}></AboutSkills>
         </Section>);
