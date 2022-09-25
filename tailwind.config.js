@@ -19,6 +19,9 @@ module.exports = {
             fontFamily: {
                 'sans': ['Reem Kufi Fun', ...defaultTheme.fontFamily.sans],
                 'sans-2': ['Oxygen', ...defaultTheme.fontFamily.sans]
+            },
+            transitionProperty: {
+                'navbar': 'backdrop-filter'
             }
         },
     },

@@ -1,12 +1,11 @@
 import Logo from '../icons/Logo';
 import Links from "./Links";
 
-/* TODO: blur only when scrolled */
-export default function Nav() {
+export default function Nav(props) {
     return (
         <header
-            className="w-full h-24 m-auto sticky top-0 backdrop-blur-sm backdrop-brightness-[0.65] z-50 shadow-xl">
-            <nav className="h-full px-14 py-2 flex items-center justify-between flex-row">
+            className={`z-50 w-full h-24 m-auto sticky top-0 backdrop-blur-sm backdrop-brightness-[0.75] backdrop-opacity-[0] transition-navbar ease-out duration-100 ${props.blur ? `backdrop-opacity-100` : ``}`}>
+            <nav className="z-50 h-full px-14 py-2 flex items-center justify-between flex-row">
                 <a href="/#hero" className="h-full" aria-label="home">
                     <Logo className="h-full py-0.5"/>
                 </a>
