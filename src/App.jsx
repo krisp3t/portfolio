@@ -11,7 +11,7 @@ function App() {
         <div
             className="w-full bg-gradient-to-b from-theme-primary to-theme-secondary min-h-screen">
             <Nav/>
-            <main className="container mx-auto p-4 text-gray-100 [counter-reset:section_0]">
+            <main className="container mx-auto p-4 text-theme-silk [counter-reset:section_0]">
                 <Hero/>
                 <About/>
                 <Projects/>
