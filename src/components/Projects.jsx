@@ -6,12 +6,10 @@ import ProjectItem from "./ProjectItem";
 import projectList from "../projects/projects.json";
 
 export default function Projects() {
-    console.log(projectList);
-
     return (<Section id="projects">
         <SectionHeading>Projects</SectionHeading>
-        <ul className="space-y-4 grid grid-cols-3 gap-10">
-            {projectList.map(el => <ProjectItem item={el}/>)}
+        <ul className="grid grid-cols-3 gap-10">
+            {projectList.map(el => <ProjectItem item={el} key={el.id}/>)}
         </ul>
     </Section>);
 }

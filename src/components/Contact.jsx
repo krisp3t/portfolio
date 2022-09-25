@@ -5,7 +5,7 @@ import Section from "./Section";
 import SectionHeading from "./SectionHeading";
 import Button from "./Button";
 
-const inputStyle = "border text-lg rounded-lg focus:ring-theme-light focus:border-theme-light block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-gray-100 w-full max-w-lg";
+const inputStyle = "border font-sans-2 text-lg rounded-lg focus:ring-theme-light focus:border-theme-light block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-gray-100 w-full max-w-lg";
 const labelStyle = "block mb-2"
 
 export default function Contact() {
@@ -16,7 +16,7 @@ export default function Contact() {
                 <Button icon={<SiGithub/>} link="https://github.com/krisp3t">GitHub</Button>
                 <Button icon={<SiLinkedin/>} link="https://www.linkedin.com/in/krispetric/">LinkedIn</Button>
             </div>
-            <p className="mb-8 font-semibold text-xl">Feel free to say hi! 👋</p>
+            <p className="mb-8 text-xl">Feel free to say hi! 👋</p>
             <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" className="space-y-4">
                 <p>
                     <label className={labelStyle}>Your Name: </label><input type="text"

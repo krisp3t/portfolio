@@ -13,7 +13,7 @@ export default function Hero() {
                 <h1 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-theme-light to-theme-lighter pb-12 underline underline-offset-8 decoration-2 decoration-theme-light shadow-glow theme">Kristijan
                     Petrič.</h1>
                 <h2 className="text-2xl">I build things for the web.</h2>
-                <Button className="mt-4" icon={<CgChevronDoubleDown/>} link="#about">Scroll for more</Button>
+                <Button className="mt-4 text-lg" icon={<CgChevronDoubleDown/>} link="#about">Scroll for more</Button>
             </div>
             <div className="m-auto md:ml-auto relative">
                 <img src={kris} alt="Portrait of me" width="300"

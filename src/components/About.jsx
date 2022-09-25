@@ -13,7 +13,7 @@ export default function About() {
     return (
         <Section id="about">
             <SectionHeading>About Me</SectionHeading>
-            <div className="space-y-4">
+            <div className="space-y-4 font-sans-2">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dignissimos doloremque explicabo iusto,
                     laudantium maxime non perferendis quasi repellat, sequi sint tempora, totam! Accusamus aut autem

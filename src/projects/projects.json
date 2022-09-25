@@ -3,18 +3,32 @@
     "id": 0,
     "name": "Pomodoro Timer",
     "description": "Customizable Pomodoro Timer made with React and Chakra UI to help you get stuff done.",
-    "imgPath": "./projects/0.jpg"
+    "imgPath": "./projects/0.jpg",
+    "tags": [
+      "React",
+      "Chakra UI"
+    ],
+    "github": "https://github.com/krisp3t/pomodoro-timer"
   },
   {
     "id": 1,
     "name": "Witchcraft Theme",
     "description": "WordPress theme made for blogs and WooCommerce stores.",
-    "imgPath": "./projects/1.jpg"
+    "imgPath": "./projects/1.jpg",
+    "tags": [
+      "WordPress",
+      "Bootstrap"
+    ],
+    "github": "https://github.com/krisp3t/witchcraft-theme"
   },
   {
     "id": 2,
-    "name": "Tic Tac Toe",
+    "name": "Tic-Tac-Toe",
     "description": "A customizable Tic-Tac-Toe game built upon vanilla JS.",
-    "imgPath": "./projects/2.png"
+    "imgPath": "./projects/2.png",
+    "tags": [
+      "JavaScript"
+    ],
+    "github": "https://github.com/krisp3t/tictactoe"
   }
 ]

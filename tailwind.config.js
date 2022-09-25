@@ -18,7 +18,7 @@ module.exports = {
             },
             fontFamily: {
                 'sans': ['Reem Kufi Fun', ...defaultTheme.fontFamily.sans],
-                'open-sans': ['Open Sans', ...defaultTheme.fontFamily.sans]
+                'sans-2': ['Oxygen', ...defaultTheme.fontFamily.sans]
             }
         },
     },
