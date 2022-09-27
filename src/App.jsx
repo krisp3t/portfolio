@@ -19,7 +19,8 @@ export default function App() {
 
     return (
         <div
-            className="w-full bg-gradient-to-b from-theme-primary to-theme-secondary min-h-screen bg-fixed">
+            className="w-full bg-gradient-to-b from-theme-primary to-theme-secondary min-h-screen bg-fixed"
+            id="main">
             <Nav blur={offset > 0}/>
             <main className="container mx-auto p-4 text-theme-silk [counter-reset:section_0]"
             >

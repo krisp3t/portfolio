@@ -17,7 +17,8 @@ export default function Contact() {
                 <Button icon={<SiLinkedin/>} link="https://www.linkedin.com/in/krispetric/">LinkedIn</Button>
             </div>
             <p className="mb-8 text-xl">Feel free to say hi! 👋</p>
-            <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" className="space-y-4">
+            <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true"
+                  className="space-y-4 pb-40">
                 <p>
                     <label className={labelStyle}>Your Name: </label><input type="text"
                                                                             name="name"

@@ -14,6 +14,7 @@
 html {
     scrollbar-color: #FFD9CE transparent;
     scrollbar-width: thin;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar-track {
