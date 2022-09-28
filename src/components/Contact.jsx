@@ -17,31 +17,25 @@ export default function Contact() {
                 <Button icon={<SiLinkedin/>} link="https://www.linkedin.com/in/krispetric/">LinkedIn</Button>
             </div>
             <p className="mb-8 text-xl">Feel free to say hi! 👋</p>
-            <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true"
-                  className="space-y-4 pb-40">
+            <form name="contact" method="POST" data-netlify="true">
                 <p>
-                    <label className={labelStyle}>Your Name: </label><input type="text"
-                                                                            name="name"
-                                                                            className={inputStyle}
-                                                                            placeholder="John Doe"
-                                                                            required/>
+                    <label>Your Name: <input type="text" name="name"/></label>
                 </p>
                 <p>
-                    <label className={labelStyle}>Your Email: </label><input type="email" className={inputStyle}
-                                                                             name="email"
-                                                                             placeholder="johndoe@email.com" required/>
+                    <label>Your Email: <input type="email" name="email"/></label>
                 </p>
                 <p>
-                    <label className={labelStyle}>Message: </label><textarea name="message" className={inputStyle}
-                                                                             placeholder="Your message here..."
-                                                                             rows={6}
-                                                                             required
-                ></textarea>
+                    <label>Your Role: <select name="role[]" multiple>
+                        <option value="leader">Leader</option>
+                        <option value="follower">Follower</option>
+                    </select></label>
                 </p>
                 <p>
-                    <Button type="submit">Send</Button>
+                    <label>Message: <textarea name="message"></textarea></label>
                 </p>
-                <div data-netlify-recaptcha="true"></div>
+                <p>
+                    <button type="submit">Send</button>
+                </p>
             </form>
         </Section>
     </div>)
