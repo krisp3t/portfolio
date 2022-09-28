@@ -5,7 +5,6 @@ import Tag from "./Tag";
 
 export default function ProjectItem(props) {
     const item = props.item;
-    console.log(<SiGithub/>);
 
     return (<li key={item.id}>
         <a href={item.github}>

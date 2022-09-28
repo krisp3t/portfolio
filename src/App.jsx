@@ -25,10 +25,10 @@ export default function App() {
     }, [])
 
     return (
-        <div className="relative">
+        <div className="relative min-h-screen">
             <Particles id="tsparticles" init={particlesInit} options={particlesOptions}/>
             <div
-                className="w-full bg-transparent min-h-screen bg-fixed"
+                className="w-full"
                 id="main">
                 <Nav blur={offset > 0}/>
                 <main className="container mx-auto p-4 text-theme-silk [counter-reset:section_0]"
