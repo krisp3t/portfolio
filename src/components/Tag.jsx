@@ -22,7 +22,7 @@ export default function Tag(props) {
     const color = (props.name.toLowerCase() in look) ? look[props.name.toLowerCase()][1] : "";
 
     return (<span
-        className={`inline-flex items-center align-middle text-sm font-medium mr-2 px-2.5 py-0.5 rounded ${color}`}><span
+        className={`inline-flex items-center align-middle text-xs font-medium mr-2 px-2.5 py-0.5 my-0.5 rounded ${color}`}><span
         className="mr-1.5">{icon}</span>
         <span>{props.name}</span></span>)
 }
