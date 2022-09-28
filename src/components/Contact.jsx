@@ -5,8 +5,8 @@ import Section from "./Section";
 import SectionHeading from "./SectionHeading";
 import Button from "./Button";
 
-const inputStyle = "border font-sans-2 text-lg rounded-lg focus:ring-theme-light focus:border-theme-light block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-gray-100 w-full max-w-lg";
-const labelStyle = "block mb-2"
+// const inputStyle = "border font-sans-2 text-lg rounded-lg focus:ring-theme-light focus:border-theme-light block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-gray-100 w-full max-w-lg";
+// const labelStyle = "block mb-2"
 
 export default function Contact() {
     return (<div>
