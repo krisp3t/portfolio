@@ -19,7 +19,7 @@ export default function Hero() {
                 <img src={kris} alt="Portrait of me" width="300"
                      className="z-20 relative border-4 border-theme-silk drop-shadow-2xl"/>
                 <div
-                    className="w-full h-full absolute bg-theme-primary top-20 left-20 z-10 drop-shadow-2xl"/>
+                    className="w-full h-full absolute bg-theme-light top-20 left-20 z-10 drop-shadow-2xl"/>
             </div>
         </section>
     )

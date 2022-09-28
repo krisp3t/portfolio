@@ -1,4 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, useCallback} from 'react';
+import Particles from "react-particles";
+import {loadFull} from "tsparticles";
 
 import './App.css';
 import Nav from './components/Nav'
@@ -6,9 +8,14 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import particlesOptions from "./particles/particlesOptions.js";
 
 export default function App() {
     const [offset, setOffset] = useState(0);
+    const particlesInit = useCallback(main => {
+        loadFull(main);
+    }, [])
+
 
     useEffect(() => {
         const onScroll = () => setOffset(window.scrollY);
@@ -18,17 +25,20 @@ export default function App() {
     }, [])
 
     return (
-        <div
-            className="w-full bg-gradient-to-b from-theme-primary to-theme-secondary min-h-screen bg-fixed"
-            id="main">
-            <Nav blur={offset > 0}/>
-            <main className="container mx-auto p-4 text-theme-silk [counter-reset:section_0]"
-            >
-                <Hero/>
-                <About/>
-                <Projects/>
-                <Contact/>
-            </main>
+        <div className="relative">
+            <Particles id="tsparticles" init={particlesInit} options={particlesOptions}/>
+            <div
+                className="w-full bg-transparent min-h-screen bg-fixed"
+                id="main">
+                <Nav blur={offset > 0}/>
+                <main className="container mx-auto p-4 text-theme-silk [counter-reset:section_0]"
+                >
+                    <Hero/>
+                    <About/>
+                    <Projects/>
+                    <Contact/>
+                </main>
+            </div>
         </div>
     );
 }
