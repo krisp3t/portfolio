@@ -5,8 +5,8 @@ import Section from "./Section";
 import SectionHeading from "./SectionHeading";
 import Button from "./Button";
 
-// const inputStyle = "border font-sans-2 text-lg rounded-lg focus:ring-theme-light focus:border-theme-light block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-gray-100 w-full max-w-lg";
-// const labelStyle = "block mb-2"
+const inputStyle = "border font-sans-2 text-lg rounded-lg focus:ring-theme-light focus:border-theme-light block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-gray-100 w-full max-w-lg";
+const labelStyle = "block mb-2"
 
 export default function Contact() {
     return (<div>
@@ -17,25 +17,41 @@ export default function Contact() {
                 <Button icon={<SiLinkedin/>} link="https://www.linkedin.com/in/krispetric/">LinkedIn</Button>
             </div>
             <p className="mb-8 text-xl">Feel free to say hi! 👋</p>
-            <form name="contact" method="POST" data-netlify="true">
+            <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true"
+                  className="space-y-4 pb-40">
+                <input
+                    type='hidden'
+                    name='form-name'
+                    value='contact'/>
                 <p>
-                    <label>Your Name: <input type="text" name="name"/></label>
+                    <label for="name" className={labelStyle}>Your Name: </label><input type="text"
+                                                                                       name="name"
+                                                                                       id="name"
+                                                                                       className={inputStyle}
+                                                                                       placeholder="John Doe"
+                                                                                       required/>
                 </p>
                 <p>
-                    <label>Your Email: <input type="email" name="email"/></label>
+                    <label for="email" className={labelStyle}>Your Email: </label><input type="email"
+                                                                                         className={inputStyle}
+                                                                                         name="email"
+                                                                                         id="email"
+                                                                                         placeholder="johndoe@email.com"
+                                                                                         required/>
                 </p>
                 <p>
-                    <label>Your Role: <select name="role[]" multiple>
-                        <option value="leader">Leader</option>
-                        <option value="follower">Follower</option>
-                    </select></label>
+                    <label for="message" className={labelStyle}>Message: </label><textarea name="message"
+                                                                                           id="message"
+                                                                                           className={inputStyle}
+                                                                                           placeholder="Your message here..."
+                                                                                           rows={6}
+                                                                                           required
+                ></textarea>
                 </p>
                 <p>
-                    <label>Message: <textarea name="message"></textarea></label>
+                    <Button type="submit">Send</Button>
                 </p>
-                <p>
-                    <button type="submit">Send</button>
-                </p>
+                <div data-netlify-recaptcha="true"></div>
             </form>
         </Section>
     </div>)
