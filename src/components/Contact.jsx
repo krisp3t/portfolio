@@ -17,12 +17,12 @@ export default function Contact() {
                 <Button icon={<SiLinkedin/>} link="https://www.linkedin.com/in/krispetric/">LinkedIn</Button>
             </div>
             <p className="mb-8 text-xl">Feel free to say hi! 👋</p>
-            <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true"
+            <form name="contact-form" method="POST" data-netlify="true" data-netlify-recaptcha="true"
                   className="space-y-4 pb-40">
                 <input
                     type='hidden'
                     name='form-name'
-                    value='contact'/>
+                    value='contact-form'/>
                 <p>
                     <label for="name" className={labelStyle}>Your Name: </label><input type="text"
                                                                                        name="name"
@@ -48,10 +48,10 @@ export default function Contact() {
                                                                                            required
                 ></textarea>
                 </p>
+                <div data-netlify-recaptcha="true"></div>
                 <p>
                     <Button type="submit">Send</Button>
                 </p>
-                <div data-netlify-recaptcha="true"></div>
             </form>
         </Section>
     </div>)

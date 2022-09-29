@@ -17,6 +17,7 @@ module.exports = {
                 }
             },
             fontFamily: {
+                'mono': ['Oxygen Mono', ...defaultTheme.fontFamily.mono],
                 'sans': ['Reem Kufi Fun', ...defaultTheme.fontFamily.sans],
                 'sans-2': ['Oxygen', ...defaultTheme.fontFamily.sans]
             },
