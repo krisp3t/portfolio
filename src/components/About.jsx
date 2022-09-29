@@ -15,25 +15,10 @@ export default function About() {
             <SectionHeading>About Me</SectionHeading>
             <div className="space-y-4 font-sans-2">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dignissimos doloremque explicabo iusto,
-                    laudantium maxime non perferendis quasi repellat, sequi sint tempora, totam! Accusamus aut autem
-                    commodi
-                    consequatur consequuntur cum delectus deserunt doloremque dolores et, eum eveniet expedita facilis
-                    hic,
-                    itaque, laudantium magnam magni neque perspiciatis placeat qui quos repellat?
+                    Hello! My name is Kristijan Petrič and I'm passionate about creating web applications and crafting the perfect user experience.
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, aut commodi, consectetur culpa
-                    dolore fuga iure nesciunt perferendis recusandae repellendus sunt tempora veniam, veritatis
-                    voluptatem
-                    voluptatum? Delectus deserunt doloribus enim fuga illum incidunt ipsam ipsum iusto nemo nostrum
-                    obcaecati officiis possimus praesentium, quam reiciendis rerum sed ullam voluptatum? Perspiciatis,
-                    quia.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque blanditiis dolorum eligendi maiores,
-                    nihil quaerat quis saepe sunt suscipit tenetur. Ab cumque delectus deleniti dicta explicabo impedit
-                    libero perferendis possimus!
+                    I'm currently based in Ljubljana, Slovenia 🇸🇮, where I study computer science.
                 </p>
             </div>
             <h3 className="font-semibold text-2xl text-center mt-16 mb-4 text-theme-lighter font-sans">I'm experienced
